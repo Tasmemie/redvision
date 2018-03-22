@@ -3,8 +3,7 @@
         var a = document.createElement("div");
         a.id = "levelmaxblock";
         a.innerHTML = '<div class="inner"> <div class="header"> </div> <div class="isi"> <p>المعذرة ! المرجو تعطيل أداة منع الإعلانات
-</p> <div class="tombol"><button class="2">تحديث الصفحة</button></div>
-		 </div>';
+</p> <div class="tombol"><button class="2">تحديث الصفحة</button></div></div></div> ';
         document.body.append(a);
         document.body.style.overflow = "hidden";
         var b = a.querySelectorAll("button");
