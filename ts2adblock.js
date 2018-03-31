@@ -2,7 +2,7 @@
     function f() {
         var a = document.createElement("div");
         a.id = "levelmaxblock";
-        a.innerHTML = '<div class="inner"> <div class="header"> </div> <div class="isi"> <p>المعذرة ! المرجو تعطيل أداة منع الإعلانات.</p><div class="tombol"><a class="2" value="Refresh Page" onClick="window.location.href=window.location.href">تحديث الصفحة</a></div></div></div> ';
+        a.innerHTML = '<div class="inner"> <div class="header"> </div> <div class="isi"> <p>المعذرة ! المرجو تعطيل أداة منع الإعلانات.</p><div class="tombol"><a class="2" onclick="myFunction()">تحديث الصفحة</a></div></div></div> ';
         document.body.append(a);
         document.body.style.overflow = "hidden";
         var b = a.querySelectorAll("button");
@@ -16,6 +16,9 @@
             d[a - 1].classList.add("active")
         })
     }
+    function myFunction() {
+    location.reload();
+}
     var b = document.createElement("script");
     b.type = "text/javascript";
     b.async = !0;
@@ -27,3 +30,4 @@
     var e = document.getElementsByTagName("script")[0];
     e.parentNode.insertBefore(b, e)
 }();
+
